@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <div>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="iusu"> Usuário</label>
+                        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome do Usuário" autocomplete="username">
+                    </p>
+                    <p>
+                        <label for="isen"> Senha: </label>
+                        <input type="password" name="sen" id="isen" required minlength="5" size="15" placeholder="min 8 letras" autocomplete="current-password">
+                    </p>
+                    <p>
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" placeholder="Email" required>
+                    </p>
+                    <p>
+                        <label for="itel">Telefone</label>
+                        <input type="tel" name="tel" id="itel" placeholder="(99)99999-9999" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                    </p>
+            </fieldset> <br>
+            <fieldset>
+                <legend>Dados do Curso</legend>
+                    <p>
+                        <label for="imedia">Média</label>
+                        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+                    </p>
+                    <p>
+                        <label for="imes"> Período Letivo</label>
+                        <input type="month" name="mes" id="imes">
+                    </p>
+                    <p>
+                        <label for="idia">Dia da Prova</label>
+                        <input type="date" name="dia" id="idia">
+                    </p>
+                    <p>
+                        <label for="ihora">Hora da Prova</label>
+                        <input type="time" name="hora" id="ihora">
+                    </p>
+                    <p class="botoes">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+            </fieldset>
+            <fieldset class="sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="imasc" value="M" checked>
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="F">
+                <label for="ifem">Feminino</label>
+            </fieldset>
+            <fieldset class="esportes">
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="esbas" id="iesbas">
+                <label for="iesbas">Basquete</label><br>
+                <input type="checkbox" name="esfut" id="iesfut">
+                <label for="iesfut">Futebol</label><br>
+                <input type="checkbox" name="escs" id="iescs">
+                <label for="iescs">CS2</label><br>
+                <input type="checkbox" name="eskarate" id="ieskarate">
+                <label for="ieskarate">Karate</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Color, Range e File</legend>
+                <p>
+                    <label for="icolor">Color</label>
+                    <input type="color" name="color" id="icolor">
+                </p>
+                <p>
+                    <label for="irange">Range</label>
+                    <input type="range" name="range" id="irange" min="0" max="10" step="0.1" value="5" oninput="ival.innerHTML = Number(irange.value)">
+                    <output id="ival">5</output>
+                </p>
+                <p>
+                    <label for="ifile">File</label>
+                    <input type="file" name="file" id="ifile">
+            </fieldset>
+            <fieldset>
+                <legend>Select, Datalist e Textarea</legend>
+                <p>
+                    <label for="iest">Estado</label>
+                    <select name="estado" id="iest">
+                        <option value="" selected>---Esocla uma Opção---</option>
+                        <optgroup label="Sudeste">
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="es">Espirito Santo</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option value="Analista de Sistemas">
+                        <option value="Programador">
+                        <option value="Web Designer">
+                        <option value="Administrador de Redes">
+                </p>
+                <p>
+                    <label for="imsg">Mensagem:</label><br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Outputs</legend>
+                <p>
+                    <label for="in1">Numero 1: </label>
+                    <input type="number" name="n1" id="in1" min="0" max="50" required 
+                    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+                <p>
+                    <label for="in2">Numero 2: </label>
+                    <input type="number" name="n2" id="in2" min="0" max="50" required 
+                    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+                <p>
+                    <label for="isoma">Soma: </label>
+                    <output name="soma" id="isoma">0</output>
+                </p>
+
+                <p>
+                    <label for="iano">Ano de Nascimento: </label>
+                    <input type="number" name="ano" id="iano" min="1900" max="2020" required oninput="calcIdade()">
+                </p>
+
+                <p>
+                    <label for="iidade">Idade: </label>
+                    <output name="idade" id="iidade">0</output>
+            </fieldset>
+        </form>
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear();
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
+    </div>
+</body>
+</html>
