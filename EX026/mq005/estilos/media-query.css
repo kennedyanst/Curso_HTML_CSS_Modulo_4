@@ -12,19 +12,120 @@ Grandes telas: acima de 1200px
 */
 
 @media screen and (min-width: 768px) {
+    body, html{
+        background-image: url("../imagens/20.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+        
+
+    menu ul li {
+        display: inline-block;
+        border: none;
+    }
+
+ 
+    main { 
+        background-color: rgba(0, 0, 0, 0.342);
+        width: 50%;
+        padding: 15px;
+        border-radius: 0px 20px;
+        box-shadow: 10px 10px 30px 10px rgba(238, 130, 238, 0.678);
+    }
+
+    .img{
+        
+        
+    }
+
     #burguer {
         display: none;
     }
 
-    menu {
-        display: block;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        background-image: linear-gradient(rgb(0,0,0),rgba(243, 8, 184, 0.6),rgb(0,0,0));
     }
 
-    menu ul li {
-        display: inline-block;
+    .parent-link{
+        font-size: 1em;
     }
 
-    main {
-        width: 768px;
+    
+    .parent-link, .icons{
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
+
+    .social-links, .nsg{
+        text-decoration: none;
+    }
+
+    .social-links{
+        padding: 0 2.5rem;
+        margin-left: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+
+    .social-links:hover{    
+        background: black;
+        color: violet;
+        box-shadow: 0 0 5px violet,
+                            0 0 25px violet,
+                            0 0 50px violet,
+                            0 0 200px violet;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+        transition: 0.5s;
+    }
+
+    #neon {
+        background: black;
+        color: violet;
+        box-shadow: 0 0 5px violet,
+                            0 0 25px violet,
+                            0 0 50px violet,
+                            0 0 200px violet;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+   
+    .sm-icon {
+        padding: 0 0rem;
+        margin-top: 50px;
+        color: white;
+    }
+
+    .sm-icon:hover{
+            background: #fffcfc;
+            color: rgb(148, 0, 148);
+            box-shadow: 0 0 5px #F2DC6D,
+                                0 0 25px rgb(248, 1, 248),
+                                0 0 50px rgb(248, 1, 248),
+                                0 0 200px rgb(248, 1, 248);
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px;
+            transition: 0.2s;
+        }
+
+
 }
