@@ -39,7 +39,11 @@ header h1{
 
 #burguer:hover{
     background-color: rgba(0, 0, 0, 0.726);
-    color: cyan;
+    color: violet;
+}
+
+burguer::after{
+    color: violet;
 }
 
 menu {
@@ -61,43 +65,20 @@ menu ul li{
     border: 1px solid black;
 }
 
-.social-links:hover{
-    color: violet;
-    text-decoration: none;
-    text-align: center;
-}
-
 menu ul li:hover{    
     background: black;
-    box-shadow: 0 0 5px violet,
-                        0 0 25px violet,
-                        0 0 50px violet,
-                        0 0 200px violet;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
     transition: 0.5s;
 }
-
-#neon {
-    background: black;
-    color: violet;
-    box-shadow: 0 0 5px violet,
-                        0 0 25px violet,
-                        0 0 50px violet,
-                        0 0 200px violet;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-}
-
-
 
 
 menu ul li a{
     color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+menu ul li a:hover{
+    color: violet;
     text-decoration: none;
     text-align: center;
 }
