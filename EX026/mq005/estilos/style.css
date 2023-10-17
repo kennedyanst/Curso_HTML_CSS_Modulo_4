@@ -31,7 +31,6 @@ header h1{
     display: block;
     color: white;
     background-color: rgba(0, 0, 0, 0.788);
-    border-radius: 5px;
     padding: 5px;
     text-align: center;
     cursor: pointer;
@@ -47,6 +46,7 @@ burguer::after{
 }
 
 menu {
+    display: inline-block;
     width: 100%;
     display: none;
     text-align: center;
@@ -104,11 +104,13 @@ main h1 {
 }
 
 img {
+    width: 90vw;
     display: block;
     margin: auto;
     margin-top: 10px;
     background-position: right center;
     background-attachment: fixed;
+    background-size: cover;
     border-radius: 10px;
 }
 
