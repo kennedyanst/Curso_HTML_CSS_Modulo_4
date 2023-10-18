@@ -4,6 +4,11 @@
 
 
 @media screen and (min-width: 768px) {
+    body, html{
+        background-image: url("../imagens/47.png");
+    }
+
+
     menu ul li {
         display: inline-block;
         border: none;
@@ -134,19 +139,36 @@
     }
 
     
-section.module.parallax h1{
-    height: 150px;
-    width: 70%;
-    color: var(--var7);
-    background-color: #000000ef;
-    padding: 30px 0px;
-    margin: auto;
-    border: 2px solid var(--var6);
-    text-align: center;
-    font-size: 40px;
-    z-index: 50;
-    text-transform: uppercase;
-    box-shadow: 8px 8px 8px 8px var(--var7);
-}
+    section.module.parallax h1{
+        height: 150px;
+        width: 70%;
+        color: var(--var7);
+        background-color: #000000ef;
+        padding: 30px 0px;
+        margin: auto;
+        border: 2px solid var(--var6);
+        text-align: center;
+        font-size: 40px;
+        z-index: 50;
+        text-transform: uppercase;
+        box-shadow: 8px 8px 8px 8px var(--var7);
+    }
+
+    
+    section.module.parallax-1{
+        background-image: url("../imagens/42.png");
+    }
+
+    section.module.parallax-2{
+        background-image: url("../imagens/43.png");
+    }
+
+    section.module.parallax-3{
+        background-image: url("../imagens/44.png");
+    }
+
+    section.module.parallax-4{
+        background-image: url("../imagens/45.png");
+    }
 
 }
