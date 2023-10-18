@@ -5,7 +5,7 @@
 
 
 :root{
-    --var1: #f2dc6dbd;
+    --var1: #f2dc6dd7;
     --var2: #f2c166bb;
     --var3: #a65e0569;
     --var4: #733906;
@@ -88,7 +88,7 @@ menu ul li a:hover{
 }
 
 .cartoes{
-    width: 80%;
+    width: 85%;
     margin: 40px auto;
 }
 
@@ -96,123 +96,146 @@ menu ul li a:hover{
 .titulos{
     margin-top: 20px;
     display: inline-block;
-    background-color: var(--var1);
+    background-color: #40371ecc;
     text-align: center;
     padding: 10px;
     box-shadow: 10px 10px 20px black;
+    border: 1px solid white;
     border-radius: 10px;
     height: 400px;
 }
 
 .titulos:hover{
     background: #ffffff;
-    color: #ffffff;
     box-shadow: 0 0 5px #F2DC6D,
                         0 0 25px #733906,
                         0 0 50px #733906,
                         0 0 200px #733906;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    
     border-radius: 10px;
     transition: 0.2s;
 }
 
+
 .titulos > h1{
-    color: black;
+    color: var(--var1);
     font-size: 22px;
 }
 
+.titulos:hover > h1{
+    color: var(--var4);
+}
+
 .titulos > h2{
-    color: black;
-    font-size: 17px;
-    
+    color: #F2E1AC;
+    font-size: 17px; 
+}
+
+
+.titulos:hover > h2{
+    color: #7a7157;
 }
 
 .titulos > p{
-    color: black;
+    color: white;
     font-size: 15px;
 }
+
+.titulos:hover > p{
+    color: black;
+}
+
+
 
 .titulos-2{
     margin-top: 20px;
     display: inline-block;
-    background-color: var(--var6);
+    background-color: #8c5818de;
     text-align: center;
     padding: 10px;
     box-shadow: 10px 10px 20px black;
+    border: 1px solid white;
     border-radius: 10px;
     height: 400px;
 }
 
 .titulos-2:hover{
     background: #000000;
-    color: #ffffff;
     box-shadow: 0 0 5px #F2DC6D,
                         0 0 25px #733906,
                         0 0 50px #733906,
                         0 0 200px #733906;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    
     border-radius: 10px;
     transition: 0.2s;
 }
 
+
 .titulos-2 > h1{
-    color: black;
-    font-size: 22px;
+color: var(--var1);
+font-size: 22px;
 }
 
 .titulos-2:hover > h1{
-    color: white;
+    color: var(--var7);
 }
 
 .titulos-2 > h2{
-    color: white;
-    font-size: 17px;
+color: #F2E1AC;
+font-size: 17px;
+
 }
 
 .titulos-2 > p{
-    color: white;
-    font-size: 15px;
+color: white;
+font-size: 15px;
 }
+
 
 
 .titulos-3{
     margin-top: 20px;
     display: inline-block;
-    background-color: var(--var1);
+    background-color: #59380ebb;
     text-align: center;
     padding: 10px;
     box-shadow: 10px 10px 20px black;
+    border: 1px solid white;
     border-radius: 10px;
     height: 400px;
 }
 
 .titulos-3:hover{
-    background: #ffffff;
-    color: #ffffff;
+    background: #F2B33D;
     box-shadow: 0 0 5px #F2DC6D,
                         0 0 25px #733906,
                         0 0 50px #733906,
                         0 0 200px #733906;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    
     border-radius: 10px;
     transition: 0.2s;
 }
-
 .titulos-3 > h1{
-    color: black;
+    color: var(--var1);
     font-size: 22px;
-}
-
-.titulos-3 > h2{
-    color: black;
+    
+    }
+    
+    .titulos-3:hover > h1{
+        color: #0D0D0D;
+    }
+    
+    .titulos-3 > h2{
+    color: #F2E1AC;
     font-size: 17px;
-}
-
-.titulos-3 > p{
-    color: black;
+    
+    }
+    
+    .titulos-3 > p{
+    color: white;
     font-size: 15px;
-}
-
+    }
+    
 
 .container-parallax{
     width: 90%;

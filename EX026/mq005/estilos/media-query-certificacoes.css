@@ -21,6 +21,7 @@
         display: flex;
         justify-content: space-around;
         background-image: linear-gradient(30deg, #F2DC6D 20%, #F2C166, #A65D05, #733906, #0D0D0D);
+        height: 180px;
     }
 
     .parent-link{
@@ -51,6 +52,7 @@
     
     
     .social-links:hover{
+        display: block;
         background: #000000;
         color: #ffffff;
         box-shadow: 0 0 5px #F2DC6D,
@@ -66,6 +68,7 @@
     }
     
     #neon {
+        display: block;
         background: #000000;
         color: #ffffff;
         box-shadow: 0 0 5px #F2DC6D,
@@ -84,7 +87,8 @@
         color: white;
     }
     
-    .icon .sm-icon:hover {
+    .icons .sm-icon:hover {
+        display: block;
         background: #fffcfc;
         color: var(--var8);
         box-shadow: 0 0 5px #F2DC6D,
@@ -125,7 +129,7 @@
     }
 
     .titulos > p, .titulos-2 > p, .titulos-3 > p{
-        font-size: 17px;
+        font-size: 16px;
         margin-top: 10px;
         text-align: justify;
         text-indent: 30px;
