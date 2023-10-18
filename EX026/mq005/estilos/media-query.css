@@ -35,7 +35,7 @@ Grandes telas: acima de 1200px
  
     main { 
         margin-left: 50px;
-        margin-top: 80px;
+        margin-top: 30px;
         background-color: rgba(0, 0, 0, 0.342);
         width: 50%;
         height: 350px;
@@ -142,7 +142,7 @@ Grandes telas: acima de 1200px
     img {
         position: absolute;
         display: block;
-        top: 250px;
+        top: 220px;
         left: 900px;
         width: 30%;
         height: 60%;
